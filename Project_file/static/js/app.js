@@ -23,6 +23,8 @@ tableData.forEach((cityData) => {
 var submit = d3.select("#submit")
 
 submit.on("click", function () {
+    // Delete table after button click
+    d3.select("tbody").html("");
     // Prevent the page from refreshing
     d3.event.preventDefault();
     var inputElement = d3.select("#datetime");
